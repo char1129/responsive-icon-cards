@@ -25,6 +25,7 @@ html {
 
 .cards {
   display: block;
+  list-style-type: none;
   margin: 0;
 }
 
@@ -33,17 +34,23 @@ html {
   margin: 0 auto;
 }
 
-h2 {
+.card-img img {
   margin: 0;
 }
 
-p {
-  margin: 0;
+.card-body h2 {
+  margin: 1.38rem 0 0;
+  font-weight: normal;
+}
+
+.card-body p {
+  margin: 0 0 1.1rem;
 }
 
 img {
   display: block;
   width: 50px;
+  margin: 0;
 }
 
 ul {
@@ -53,13 +60,40 @@ ul {
 
 .cards li {
   margin: 0;
-  list-style: none;
 }
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+    margin: 0 0 1.4rem;
+  }
 
   img {
-    margin: .75em;
+  margin: .75em;
+  }
+
+  .cards {
+    display: flex;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
   }
 
 }
